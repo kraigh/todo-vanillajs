@@ -1,0 +1,114 @@
+body {
+    font-family: "Helvetica", sans-serif;
+}
+
+#todos {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 800px) {
+    #todos {
+        width: 80%;
+    }
+}
+
+#todos #new-todo #new-title {
+    width: 80%;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+
+#todos #new-todo #new-title:focus {
+    outline: none;
+}
+
+#todos #new-todo #new-submit {
+    background-color: hsl(220, 100%, 60%);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+#todos #new-todo #new-submit:hover {
+    background-color: hsl(220, 100%, 50%);
+}
+
+#todos #new-todo #new-submit:active {
+    background-color: hsl(220, 100%, 40%);
+}
+
+#todos .todo {
+    font-size: 30px;
+    padding: 20px 0px;
+    border-bottom: 1px dotted #aaa;
+}
+
+#todos .todo:last-of-type {
+    border-bottom: none;
+}
+
+#todos .todo p {
+    /* This is so each p doesn't get a new line */
+    display: inline-block;
+    /* This is to correct for default browser styles */
+    margin: 0px;
+    /* This is so that longer ToDo titles won't send delete button
+    to new line. Could also use a grid layout in each ToDo. */
+    max-width: 80%;
+}
+
+#todos .todo button {
+    background: none;
+    position: relative;
+    bottom: -2px;
+
+}
+
+#todos .todo .check {
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #888;
+    border-radius: 4px;
+}
+
+#todos .todo .check:hover {
+    background-color: hsl(180, 50%, 80%);
+}
+
+#todos .todo .check:active {
+    background-color: hsl(180, 50%, 60%);
+}
+
+#todos .todo .delete {
+    float: right;
+    border: none;
+    font-size: 30px;
+    padding: 5px 10px;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: hsl(0, 50%, 60%);
+    color: white;
+}
+
+#todos .todo .delete:hover {
+    background-color: hsl(0, 50%, 50%);
+}
+#todos .todo .delete:active {
+    background-color: hsl(0, 50%, 40%);
+}
+
