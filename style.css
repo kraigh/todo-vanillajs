@@ -17,14 +17,14 @@ body {
     }
 }
 
-#todos #new-todo #new-title {
+#todos #new-todo #newTitle {
     width: 80%;
     font-size: 30px;
     border: none;
     border-bottom: 1px solid #aaa;
 }
 
-#todos #new-todo #new-title:focus {
+#todos #new-todo #newTitle:focus {
     outline: none;
 }
 
@@ -91,6 +91,18 @@ body {
 
 #todos .todo .check:active {
     background-color: hsl(180, 50%, 60%);
+}
+
+#todos .todo.completed {
+    color: lightgray;
+}
+
+#todos .todo.completed p {
+    text-decoration: line-through;
+}
+
+#todos .todo.completed .check {
+    background-color: hsl(180, 50%, 30%);
 }
 
 #todos .todo .delete {
